@@ -1,6 +1,7 @@
 a = [1, 2, 3, 4, 5]
 b = int(input())
 
+# my simple sample
 def shift(a, b):
     """
     should do cycle (left/right, depends on sigh of number) shift for array a in the specified dir
@@ -30,4 +31,17 @@ def shift(a, b):
     return an
 
 
-print(shift(a, b))
+# good sample
+def goodShift(a, b):
+    if b > 0:
+        for i in range(b):
+            a.insert(0, a.pop())
+
+    else:
+        for i in range(abs(b)):
+            a.append(a.pop(0))
+
+    return a
+
+
+print(shift(a, b), goodShift(a, b))
