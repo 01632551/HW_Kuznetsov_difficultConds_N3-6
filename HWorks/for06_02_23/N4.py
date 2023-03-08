@@ -1,4 +1,3 @@
-# № 4
 from random import randint
 a = [randint(20, 100) for x in range(10)]
 

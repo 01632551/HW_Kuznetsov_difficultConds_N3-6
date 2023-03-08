@@ -1,4 +1,3 @@
-# N2
 a, b = int(input()), int(input())
 while b != 0:
      m = min(a, b)

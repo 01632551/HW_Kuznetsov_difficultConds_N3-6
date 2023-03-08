@@ -1,4 +1,3 @@
-# N5
 from random import randint
 
 a = [randint(1000, 2000) for x in range(10)]
